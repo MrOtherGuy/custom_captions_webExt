@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="context-fill" fill-opacity="context-fill-opacity" viewBox="0 0 16 16">
+<style>
+  @supports not (-moz-context-properties: fill){
+    .styled { fill: #353a31; fill-opacity: initial }
+    @media (prefers-color-scheme: dark) { .styled { fill: #fbfbfe } }
+  }
+</style>
+<path class="styled" d="M3,3l10,0l0,10l-10,0zM4,4l8,0l0,8l-8,0z" fill-rule="evenodd"/>
+</svg>

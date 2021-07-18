@@ -1,0 +1,26 @@
+{
+  "description": "Creates a movable button to close current window.",
+  "manifest_version": 2,
+  "name": "Movable window-close-button",
+  "version": "1.0",
+  "permissions":["storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+  "default_title": "Close",
+    "default_icon": {
+      "16": "icons/button-auto.svg"
+    }
+  },
+  "options_ui": {
+      "page": "options/options.html",
+      "browser_style": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "mwclose@example.com",
+      "strict_min_version": "77.0"
+    }
+  }
+}
