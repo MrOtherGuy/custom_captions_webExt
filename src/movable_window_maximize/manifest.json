@@ -2,13 +2,13 @@
   "description": "Creates a movable button to maximize / restore current window.",
   "manifest_version": 2,
   "name": "Movable window-maximize-button",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions":["storage"],
   "background": {
     "scripts": ["background.js"]
   },
   "browser_action": {
-  "default_title": "Maximize",
+    "default_title": "Maximize",
     "theme_icons": [
       {
         "dark": "icons/button-auto-dark.svg",
