@@ -22,7 +22,11 @@ function init(){
 }
 
 function updateButton(iconType){
-  browser.browserAction.setIcon({path:"../icons/button-"+iconType+".svg"})
+  if(iconType === "auto"){
+    browser.browserAction.setIcon({path:null})
+  }else{
+    browser.browserAction.setIcon({path:"../icons/button-"+iconType+".svg"})
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -12,3 +12,11 @@ browser.browserAction.onClicked.addListener(
     }
   }
 )
+
+browser.storage.local.get(["iconstyle"])
+.then(res => {
+  if(!(res.iconstyle && res.iconstyle != "auto")){
+    return
+  }
+  browser.browserAction.setIcon({path:"../icons/button-"+res.iconstyle+".svg"})
+})

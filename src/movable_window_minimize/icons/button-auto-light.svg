@@ -2,8 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="context-fill" fill-opacity="context-fill-opacity" width="16" height="16" viewBox="0 0 16 16">
 <style>
   @supports not (-moz-context-properties: fill){
-    .styled { fill: #353a31; fill-opacity: 1 }
-    @media (prefers-color-scheme: dark) { .styled { fill: #fbfbfe } }
+    .styled { fill: #fbfbfe; fill-opacity: 1 }
   }
 </style>
 <path class="styled" d="M2.5,8l0,1l11,0l0,-1z"/>

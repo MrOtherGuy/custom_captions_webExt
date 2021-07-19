@@ -9,9 +9,13 @@
   },
   "browser_action": {
   "default_title": "Maximize",
-    "default_icon": {
-      "16": "icons/button-auto.svg"
-    }
+    "theme_icons": [
+      {
+        "dark": "icons/button-auto-dark.svg",
+        "light": "icons/button-auto-light.svg",
+        "size": 16
+      }
+    ]
   },
   "options_ui": {
       "page": "options/options.html",
