@@ -2,7 +2,7 @@ browser.runtime.onInstalled.addListener(()=>{
   browser.storage.local.set({iconstyle:"auto"})
 });
 
-browser.browserAction.onClicked.addListener(
+browser.action.onClicked.addListener(
   async (tab) => {
     let win = await browser.windows.getCurrent();
     if( win.state === "maximized" ){
@@ -13,10 +13,9 @@ browser.browserAction.onClicked.addListener(
   }
 )
 
-browser.storage.local.get(["iconstyle"])
-.then(res => {
-  if(!(res.iconstyle && res.iconstyle != "auto")){
-    return
+browser.runtime.onStartup.addListener(async () => {
+  const opt = await browser.storage.local.get(["iconstyle"]);
+  if(opt.iconstyle && opt.iconstyle != "auto"){
+    browser.action.setIcon({path:"../icons/button-"+opt.iconstyle+".svg"})
   }
-  browser.browserAction.setIcon({path:"../icons/button-"+res.iconstyle+".svg"})
-})
+});

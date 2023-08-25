@@ -23,9 +23,9 @@ function init(){
 
 function updateButton(iconType){
   if(iconType === "auto"){
-    browser.browserAction.setIcon({path:null})
+    browser.action.setIcon({path:null})
   }else{
-    browser.browserAction.setIcon({path:"../icons/button-"+iconType+".svg"})
+    browser.action.setIcon({path:"../icons/button-"+iconType+".svg"})
   }
 }
 
